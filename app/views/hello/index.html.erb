@@ -1,8 +1,15 @@
 <h1>hi!!!</h1>
 
-<p>I love it</p>
+<p>New year resolutions:</p>
+
+<% fillings = ["stay fit and hot!", "stay happy", "have a good time w/Joe Tan", "lead a fullfilling life"] %>
+
+<!-- I'm a comment -->
+
+<p> I have <%= fillings.count %> resolutions</p>
 
 <ul>
-  <li>shabushabu</li>
-<ul>
-
+  <% for filling in fillings %>
+    <li><%= filling %></li>
+  <% end %>
+</ul>
